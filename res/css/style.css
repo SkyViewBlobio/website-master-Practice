@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(rgb(10, 10, 10), rgb(68, 23, 23)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='313' height='313' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23444444' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555555'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+*::selection {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mb-vh-40 {
+    margin-bottom: 40vh;
+}
+
+.my-custom {
+    margin-top: 3rem!important;
+    margin-bottom: 5rem!important;
+}
+/*h1*/
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: -0.3rem;
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 span {
+    --gradient-color-1: rgb(85 236 15);
+    --gradient-color-2: rgb(12 40 10);
+    display: inline-block;
+    vertical-align: bottom;
+    text-shadow: 0px 0px 15px rgb(64 123 20 / 35%);
+    background-image: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-1), var(--gradient-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    overflow: hidden;
+    width: fit-content;
+    animation: 1s anim backwards cubic-bezier(0.25, 0.1, 0.17, 1), 5s anim4 ease-in-out infinite alternate;
+    animation-delay: .3s;
+    text-align: center;
+}
+
+.main-heading {
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    animation: 1s anim2 backwards ease;
+    animation-delay: 1.7s;
+    transform: translateY(-20px);
+}
+
+.heading-smaller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-smaller::before {
+    content: "";
+    display: inline-block;
+    margin-right: .75rem;
+    width: 4px;
+    height: calc(1.525rem + 2.1vw);
+    background-image: linear-gradient(#6e9b43, #bcffb2);
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0 20px #30d917;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.overflow-hidden-div p {
+    transform: translateY(-15px);
+    white-space: nowrap;
+}
+
+.overflow-hidden-div {
+    overflow-y: hidden;
+    animation: 1s anim3 backwards;
+    animation-delay: 1.7s;
+    height: 230px;
+}
+
+.box {
+
+    --border-color-green: #02d136;
+    --gradient-blue-1: #7289da;
+    --gradient-blue-2: #364168;
+
+    --border-color-green: #02d136;
+    --gradient-red-1: #58131354;
+    --gradient-red-2: #28363654;
+    display: inline-block;
+    border: 1px solid var(--border-color-green);
+    border-radius: 5px;
+    border-gradient-green: #02d136;
+    border-shadow-green: #02d136;
+    border-shadow-left: 34px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    background-image: linear-gradient(70deg, var(--gradient-green-2), var(--gradient-green-1));
+    backdrop-filter: blur(6px);
+    width: fit-content;
+}
+
+.discord-link {
+    background-color: rgba(50, 205, 50, 0.50);
+    border: 1px solid rgba(50, 205, 50, 0.1);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    transition: .3s box-shadow, .3s border-color;
+    font-size: 16px;
+    display: inline-block;
+    width: fit-content;
+    margin: 0;
+    max-height: 42px;
+}
+
+.box .discord-link {
+    position: relative;
+    bottom: -4px;
+}
+
+.discord-link:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) -2.95px 2.95px 2.6px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.discord-link:hover svg:not(.github) {
+    transform: translateY(-3px) translateX(1px);
+}
+
+.discord-link svg {
+    width: 26px;
+    vertical-align: middle;
+    transform: translateY(-2px);
+    transition: .3s transform;
+}
+
+.discord-link svg.github {
+    width: 20px;
+}
+
+.discord-description {
+    font-size: 18px;
+    margin-bottom: 0;
+    position: relative;
+    top: -6px;
+}
+
+.dev-container {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dev-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0 !important;
+}
+
+.dev-icon {
+    border-radius: 100%;
+    border: 4px solid #24a112;
+    width: 220px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer a {
+    color: rgba(50, 205, 50, 0.7);
+    text-decoration: none;
+    transition: .2s color;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+@media only screen and (max-width:504px) {
+    .dev-icon {
+        width: 150px;
+    }
+
+    .dev-wrapper {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:954px) {
+    .dev-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dev-container {
+        min-width: 100%;
+    }
+
+    .dev-main {
+        margin-right: 3.5rem!important;
+        margin-left: 3.5rem!important;
+    }
+}
+
+@media only screen and (max-width:628px) {
+    .dev-main {
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+}
+
+@media only screen and (max-width:612px) {
+    .overflow-hidden-div .main-heading {
+        font-size: 100px;
+    }
+
+    .overflow-hidden-div h1 span {
+        animation-name: anim-responsive;
+    }
+
+    .overflow-hidden-div {
+        height: 166px;
+        animation-name: anim3-responsive;
+    }
+}
+
+@keyframes anim {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 265.5px;
+    }
+}
+
+@keyframes anim-responsive {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 170.61px;
+    }
+}
+
+
+@keyframes anim2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes anim3 {
+    from {
+        height: 170px;
+    }
+
+    to {
+        height: 230px;
+    }
+}
+
+@keyframes anim3-responsive {
+    from {
+        height: 106px;
+    }
+
+    to {
+        height: 166px;
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.02;
+    width: 100vw;
+    height: 100vh;
+    animation: 1s fade-in-background backwards;
+    animation-delay: 2s;
+}
+
+@keyframes fade-in-background {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.02;
+    }
+}
