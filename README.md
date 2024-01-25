@@ -1,2 +1,2 @@
 # Use it if you like
-- its free to use my base
+- You are 100% free to use my base for your own practice purpose.
